@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="NumberTableViewCell" customModule="TableViewTopSpace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PW-ba-b3N">
+                        <rect key="frame" x="12" y="31" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milkshake" translatesAutoresizingMaskIntoConstraints="NO" id="7qF-F0-tIR">
+                        <rect key="frame" x="135" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9SW-4t-vjD"/>
+                            <constraint firstAttribute="width" constant="50" id="yq9-4f-x2z"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOn-0N-E8M">
+                        <rect key="frame" x="8" y="78.5" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JGY-93-mrn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.87450980389999999" green="0.90196078430000004" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="7qF-F0-tIR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1Er-WO-Atf"/>
+                    <constraint firstItem="0PW-ba-b3N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="8WS-tU-v3A"/>
+                    <constraint firstItem="0PW-ba-b3N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="99Y-zr-cXA"/>
+                    <constraint firstAttribute="trailing" secondItem="wOn-0N-E8M" secondAttribute="trailing" constant="8" id="GTE-U6-nlM"/>
+                    <constraint firstItem="7qF-F0-tIR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NxC-2A-6p9"/>
+                    <constraint firstAttribute="bottom" secondItem="wOn-0N-E8M" secondAttribute="bottom" id="S7E-h8-g8R"/>
+                    <constraint firstItem="wOn-0N-E8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="abP-hQ-fDo"/>
+                    <constraint firstItem="7qF-F0-tIR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="pNW-Ym-qpm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7qF-F0-tIR" secondAttribute="bottom" constant="6.5" id="s4t-ac-leR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblNumber" destination="0PW-ba-b3N" id="66n-2p-dyq"/>
+            </connections>
+            <point key="canvasLocation" x="-127" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Milkshake" width="128" height="128"/>
+    </resources>
+</document>
